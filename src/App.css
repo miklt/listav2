@@ -38,9 +38,8 @@
   position: absolute;
   left: 0%;
   right: 18.38%;
-  top: 0%;
+  top: 2.5%;
   bottom: 0%;
-
   font-family: Risque;
   font-style: normal;
   font-weight: normal;
@@ -49,7 +48,10 @@
   display: flex;
   align-items: center;
   text-align: center;
-
+  height: 40px;
+  border-radius: 10px;
+  border-width: 0px;
+  background: #FFE0B1;
   color: rgba(18, 8, 8, 0.51);
 }
 .botaoAdicionar {
@@ -58,10 +60,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
-  line-height: 56px;
+  line-height: 40px;
   align-items: center;
   text-align: center;
   background: #946c2f;
+  border-width: 0px;
   color: #f2f2f2;
   position: absolute;
   width: 40px;
@@ -70,8 +73,61 @@
   top: 0px;
 }
 .lista {
-
+  position: absolute;
+  width: 270px;
+  height: 151px;
+  left: calc(50% - 270px/2 + 0.5px);
+  top: 249px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #946C2F;
+  border-radius: 19px;
 }
 .produtoEPreco {
-  
+  position: relative;
+  font-family: Risque;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFE0B1;  
+  left: 0px;
+  top: 20px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;    
+}
+.produto {
+  width: 160px;
+  height: 30px;
+  color: #FFFFFF;
+  font-family: Risque;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;  
+}
+.preco {  
+  width: 60px;
+  height: 30px;  
+}
+.procurar {      
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  left: calc(50% - 150px/2 + 0.5px);
+  top: 430px;
+  border-width: 0px;
+  bottom: 0%;
+  font-family: Risque;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;  
+  align-items: center;
+  text-align: center;
+  color: #FFE0B1;
+  background: #2C853A;
+  border-radius: 10px;
 }
