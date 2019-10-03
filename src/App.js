@@ -16,11 +16,18 @@ const App = () => {
       setProdutos([...produtos,produto]);
       console.log("#produtos:", produtos.length);      
     }
+    const removerProduto = (produto) => {
+      console.log("produto>",produto);
+      let pes = produtos.filter(produto);
+      console.log("produtos filtrados",pes);
+      //setProdutos(pes);
+      //console.log("#produtos:", produtos.length);      
+    }
     React.useEffect ( () => setProdutos(produtos),[produtos]);
     
     return <div className="conteiner">
       <Titulo/>
-      <Formulario produto={produto} onClick={adicionarProdutos}/>
+      <Formulario produto={produto} onClick={adicionarProdutos} onDelete={removerProduto}/>
       <Lista listaProdutos={produtos}/>
       <Procurar/>
     </div>
