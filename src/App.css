@@ -1,11 +1,14 @@
 .conteiner {
   display: flex;
+  flex-direction: column;
   position: absolute;
   left: 0%;
   right: 0%;
   top: 0%;
   bottom: 0%;
   background: url("images/background-mercado.jpg");
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 .titulo {
   position: absolute;
@@ -74,17 +77,21 @@
 }
 .lista {
   position: absolute;
-  width: 270px;
-  height: 151px;
-  left: calc(50% - 270px/2 + 0.5px);
-  top: 249px;
   display: flex;
   flex-direction: column;
+  width: 270px;
+  min-height: 150px;
+  max-height: 300px;
+  left: calc(50% - 270px/2 + 0.5px);
+  top: 249px;  
   align-items: center;
   background: #946C2F;
   border-radius: 19px;
+  padding-bottom: 15px;  
+  overflow-y: scroll;
 }
 .produtoEPreco {
+  
   position: relative;
   font-family: Risque;
   font-style: normal;
@@ -112,12 +119,12 @@
   width: 60px;
   height: 30px;  
 }
-.procurar {      
+.procurar {        
   position: absolute;
+  top: 600px;  
   width: 150px;
   height: 40px;
   left: calc(50% - 150px/2 + 0.5px);
-  top: 430px;
   border-width: 0px;
   bottom: 0%;
   font-family: Risque;

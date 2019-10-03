@@ -7,8 +7,6 @@ const Lista = (props) => {
     //   <ProdutoEPreco nomeProduto='1 cx bombons' precoProduto='R$ 8,20'/>
     //   <ProdutoEPreco nomeProduto='1 lt óleo' precoProduto='R$ 3,40'/>
     // </div>
-    
-  
     const prods = props
                   .listaProdutos
                   .map( t =>  
