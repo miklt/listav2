@@ -9,6 +9,8 @@ const Titulo = () => (
 )
 const Formulario = () => (
   <div className="formulario">
+  <input type='text' className="entradaProduto"></input>
+  <buton className="botaoAdicionar">+</buton>
   </div>
 )
 const Lista = () => (

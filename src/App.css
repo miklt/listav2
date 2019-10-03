@@ -5,13 +5,13 @@
   right: 0%;
   top: 0%;
   bottom: 0%;
-  background: url('images/background-mercado.jpg');
+  background: url("images/background-mercado.jpg");
 }
 .titulo {
   position: absolute;
   width: 300px;
   height: 100px;
-  left: calc(50% - 300px/2 + 0.5px);
+  left: calc(50% - 300px / 2 + 0.5px);
   top: 80px;
   font-family: Risque;
   font-style: normal;
@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
 
-  color: #FAE848;
+  color: #fae848;
 
   mix-blend-mode: normal;
   backdrop-filter: blur(4px);
@@ -31,6 +31,47 @@
   position: absolute;
   width: 272px;
   height: 40px;
-  left: calc(50% - 272px/2 + 0.5px);
+  left: calc(50% - 272px / 2 + 0.5px);
   top: 184px;
+}
+.entradaProduto {
+  position: absolute;
+  left: 0%;
+  right: 18.38%;
+  top: 0%;
+  bottom: 0%;
+
+  font-family: Risque;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: rgba(18, 8, 8, 0.51);
+}
+.botaoAdicionar {
+  position: absolute;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 56px;
+  align-items: center;
+  text-align: center;
+  background: #946c2f;
+  color: #f2f2f2;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 0px;
+  top: 0px;
+}
+.lista {
+
+}
+.produtoEPreco {
+  
 }
