@@ -7,7 +7,7 @@ const Formulario = ({ onClick }) => {
   }
 
   return <div className="formulario">
-    <input placeholder="digite o produto e a quantidade"
+    <input placeholder="digite o nome de um produto"
       type='text' value={nome} onChange={onChange}
       className="entradaProduto"></input>
     <button className="botaoAdicionar" onClick={() => onClick({ "nome": nome, "preco": "0.00" })}>+</button>
