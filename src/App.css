@@ -121,7 +121,7 @@
 }
 .procurar {        
   position: absolute;
-  top: 600px;  
+  top: 580px;  
   width: 150px;
   height: 40px;
   left: calc(50% - 150px/2 + 0.5px);

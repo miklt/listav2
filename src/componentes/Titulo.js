@@ -4,4 +4,4 @@ const Titulo = () => (
       Lista de Compras
     </div>
   )
-export {Titulo}
+export { Titulo };
