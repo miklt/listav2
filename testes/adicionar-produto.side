@@ -1,0 +1,125 @@
+{
+  "id": "ed286a24-a57c-4827-b436-9ebe172d10eb",
+  "version": "2.0",
+  "name": "lista",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "3c8278dc-95a3-4d39-a4e2-c6c476cfa9ed",
+    "name": "adicionar produto",
+    "commands": [{
+      "id": "673af872-2d91-4e8b-89fb-945e93f96343",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd84b1e8-f5ec-4485-84d4-525394dfe518",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1389x789",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b84d370-af0e-4003-b95c-2d55dadbd4d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.entradaProduto",
+      "targets": [
+        ["css=.entradaProduto", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63df6d1b-0f18-4780-a65a-b63db6340d76",
+      "comment": "",
+      "command": "type",
+      "target": "css=.entradaProduto",
+      "targets": [
+        ["css=.entradaProduto", "css:finder"],
+        ["xpath=//input[@value='abacaxi']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "abacaxi"
+    }, {
+      "id": "74c21366-30ce-4374-ac08-f08e98704b37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botaoAdicionar",
+      "targets": [
+        ["css=.botaoAdicionar", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d7a438c-a61a-4c38-b498-35ff7fae1a28",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.produto",
+      "targets": [],
+      "value": "abacaxi"
+    }, {
+      "id": "8a352706-32cb-42d9-ba69-dcb8a110269b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.entradaProduto",
+      "targets": [
+        ["css=.entradaProduto", "css:finder"],
+        ["xpath=//input[@value='abacaxi']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "31ec2ca3-bde7-4d79-9f2a-7f3c8f83dae7",
+      "comment": "",
+      "command": "type",
+      "target": "css=.entradaProduto",
+      "targets": [
+        ["css=.entradaProduto", "css:finder"],
+        ["xpath=//input[@value='batata']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "batata"
+    }, {
+      "id": "d14cd051-11ab-40ae-ad81-62d1c19f816c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botaoAdicionar",
+      "targets": [
+        ["css=.botaoAdicionar", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e492a7b-e1a5-4108-b59e-19416dfb11fd",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.produtoEPreco:nth-child(2) > .produto",
+      "targets": [
+        ["css=.produtoEPreco:nth-child(2) > .produto", "css:finder"],
+        ["xpath=//div[@id='root']/div/div[3]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div", "xpath:position"]
+      ],
+      "value": "batata"
+    }]
+  }],
+  "suites": [{
+    "id": "98ade0d5-ba01-4190-a7ef-1c6426cb8a9c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3c8278dc-95a3-4d39-a4e2-c6c476cfa9ed"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}

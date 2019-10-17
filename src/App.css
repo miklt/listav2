@@ -92,8 +92,7 @@
   padding-bottom: 15px;  
   overflow-y: scroll;
 }
-.produtoEPreco {
-  
+.produtoEPreco {  
   position: relative;
   font-family: Risque;
   font-style: normal;
@@ -150,6 +149,6 @@
 }
 
 .lista::-webkit-scrollbar-thumb {
-background-color: rgb(230, 132, 41);
-outline: 1px solid rgba(105, 40, 3, 0.541);
+background-color: rgba(230, 132, 0, 0.5);
+outline: 1px solid rgba(105, 40, 0, 0.41);
 }
