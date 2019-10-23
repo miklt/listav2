@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './App.css';
-import { ListaProdutosEPrecos, PRECOS } from './DadosIniciais.js'
+import { PRECOS } from './DadosIniciais.js'
 import { Titulo } from './componentes/Titulo'
 import { Formulario } from './componentes/Formulario'
 import { Lista } from './componentes/Lista'
@@ -9,7 +9,7 @@ import { Procurar } from './componentes/Procurar'
 
 const App = () => {
   const [produtos, setProdutos] = React.useState([]);
-  const [produto, setProduto] = React.useState({ "nome": "a", "preco": "3" });
+  //const [produto, setProduto] = React.useState({ "nome": "a", "preco": "3" });
 
   const adicionarProdutos = (produto) => {
     if (produto && produto.nome.length > 3) {
@@ -49,22 +49,22 @@ const App = () => {
   }
 
   const removerProduto = (produto) => {
-    let pes = produtos.filter(produto);
+    //let pes = produtos.filter(produto);
     //setProdutos(pes);
   }
   React.useEffect(() => setProdutos(produtos), [produtos]);
 
   return <div className="conteiner">
     <Titulo />
-    <Formulario produto={produto} onClick={adicionarProdutos} onDelete={removerProduto} />
+    <Formulario onClick={adicionarProdutos} onDelete={removerProduto} />
     <Lista listaProdutos={produtos} />
     <Procurar onClick={procurarPrecos} />
   </div>
 }
 
-function procurarPrecos() {
+// function procurarPrecos() {
   // Atualiza os preços dos produtos
-}
+// }
 
 
 export default App;
