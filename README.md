@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/miklt/listav2.svg?branch=master)](https://travis-ci.org/miklt/listav2)
+
 #Lista de Compras com Preços do Entreposto
 ## Instalação
 Para executar a aplicação é necessário ter instalado o git e o Node na versão 10 ou posterior
