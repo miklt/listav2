@@ -3,7 +3,7 @@ import {
     Link    
   } from "react-router-dom";
 import '../App.css'
-const Menu = () => <div  className="menu">
+const Menu = () => <div className="menu">
     <nav >
         <ul>
         <li>
