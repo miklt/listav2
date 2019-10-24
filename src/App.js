@@ -17,7 +17,8 @@ const App = () => {
         setProdutos([...produtos, produto]);
       }
     }
-  }  
+  }
+  
   const procurarPreco = (produto) => {
     const r = PRECOS
       .find(
@@ -48,9 +49,9 @@ const App = () => {
   }
 
   const removerProduto = (produto) => {    
-    let pes = produtos.filter( t =>{
-      return !t.nome.toLocaleLowerCase().includes(produto.nome.toLocaleLowerCase() ) 
-    });    
+    let pes = produtos.filter( t =>{      
+      return !(t.nome === produto.nome);
+    });
     setProdutos(pes);
   }
   React.useEffect(() => setProdutos(produtos), [produtos]);
