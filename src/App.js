@@ -56,7 +56,7 @@ const App = () => {
   return <div className="conteiner">
     <Titulo />
     <Formulario onClick={adicionarProdutos} onDelete={removerProduto} />
-    <Lista listaProdutos={produtos} />
+    <Lista listaProdutos={produtos}  />
     <Procurar onClick={procurarPrecos} />
   </div>
 }
