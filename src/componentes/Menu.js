@@ -2,8 +2,10 @@ import React from 'react';
 import {   
     Link    
   } from "react-router-dom";
-const Menu = () => <nav >
-    <ul>
+import '../App.css'
+const Menu = () => <div  className="menu">
+    <nav >
+        <ul>
         <li>
             <Link to="/">App</Link>
         </li>
@@ -12,4 +14,6 @@ const Menu = () => <nav >
         </li>
     </ul>
 </nav>
+</div>
+
 export default Menu;

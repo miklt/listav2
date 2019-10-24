@@ -10,6 +10,36 @@
   justify-content: flex-start;
   align-items: flex-start;
 }
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  
+  right: 0%;
+  top: 0%;
+  color: #FFE0B1;
+  
+  z-index: 1;  
+}
+.menu ul {  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  
+}
+.menu li {
+  display: inline;
+}
+.menu li a:hover {
+  background-color: #884526a4;
+}
+.menu a {  
+  padding: 8px;
+  font-family: Risque;
+  background-color: #632a04a1;
+  color: #f2f2f2;
+  text-decoration: none;
+}
 .titulo {
   position: absolute;
   width: 300px;
