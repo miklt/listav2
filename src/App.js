@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css';
 import { PRECOS } from './DadosIniciais.js'
 import { Titulo } from './componentes/Titulo'
@@ -36,7 +35,7 @@ const App = () => {
     }
 
   }
-  const procurarPrecos = () => {
+  const procurarPrecos = () => {    
     const pes = produtos.map(t => {
       const preco = procurarPreco(t);
       if (preco) {
