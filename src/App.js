@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './App.css';
 import { PRECOS } from './DadosIniciais.js'
 import { Titulo } from './componentes/Titulo'
@@ -7,8 +8,7 @@ import { Lista } from './componentes/Lista'
 import { Procurar } from './componentes/Procurar'
 
 const App = () => {
-  const [produtos, setProdutos] = React.useState([]);
-  //const [produto, setProduto] = React.useState({ "nome": "a", "preco": "3" });
+  const [produtos, setProdutos] = React.useState([]);  
 
   const adicionarProdutos = (produto) => {
     if (produto && produto.nome.length > 3) {
@@ -17,7 +17,7 @@ const App = () => {
         setProdutos([...produtos, produto]);
       }
     }
-  }
+  }  
   const procurarPreco = (produto) => {
     const r = PRECOS
       .find(
@@ -35,7 +35,7 @@ const App = () => {
     }
 
   }
-  const procurarPrecos = () => {    
+  const procurarPrecos = () => {
     const pes = produtos.map(t => {
       const preco = procurarPreco(t);
       if (preco) {
@@ -47,16 +47,18 @@ const App = () => {
     setProdutos(pes);
   }
 
-  const removerProduto = (produto) => {
-    //let pes = produtos.filter(produto);
-    //setProdutos(pes);
+  const removerProduto = (produto) => {    
+    let pes = produtos.filter( t =>{
+      return !t.nome.toLocaleLowerCase().includes(produto.nome.toLocaleLowerCase() ) 
+    });    
+    setProdutos(pes);
   }
   React.useEffect(() => setProdutos(produtos), [produtos]);
 
   return <div className="conteiner">
     <Titulo />
-    <Formulario onClick={adicionarProdutos} onDelete={removerProduto} />
-    <Lista listaProdutos={produtos}  />
+    <Formulario onClick={adicionarProdutos}/>
+    <Lista listaProdutos={produtos} onClick={removerProduto} />
     <Procurar onClick={procurarPrecos} />
   </div>
 }
