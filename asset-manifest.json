@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/listav2/static/css/main.993815cb.chunk.css",
+    "main.js": "/listav2/static/js/main.3762656c.chunk.js",
+    "main.js.map": "/listav2/static/js/main.3762656c.chunk.js.map",
+    "runtime-main.js": "/listav2/static/js/runtime-main.51b06a5a.js",
+    "runtime-main.js.map": "/listav2/static/js/runtime-main.51b06a5a.js.map",
+    "static/js/2.c22195ba.chunk.js": "/listav2/static/js/2.c22195ba.chunk.js",
+    "static/js/2.c22195ba.chunk.js.map": "/listav2/static/js/2.c22195ba.chunk.js.map",
+    "index.html": "/listav2/index.html",
+    "precache-manifest.5e751980f62663e9ed0661e51eeb20cd.js": "/listav2/precache-manifest.5e751980f62663e9ed0661e51eeb20cd.js",
+    "service-worker.js": "/listav2/service-worker.js",
+    "static/css/main.993815cb.chunk.css.map": "/listav2/static/css/main.993815cb.chunk.css.map",
+    "static/media/App.css": "/listav2/static/media/background-mercado.c5507bb2.jpg"
+  }
+}
